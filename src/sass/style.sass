@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins')
+@import '../../node_modules/bootstrap/scss/bootstrap.scss'
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
+$red: rgb(202,84,78)
+$grey: rgb(243,243,243)
+body
+    box-sizing: border-box
+    font-family: 'Poppins'
+    overflow-wrap: break-word
+    .bgred
+        background-color: $red
+    .bgrey
+        background-color: $grey
+    header
+        margin-bottom: 3rem
+        div.container
+            div.row
+                div.col-12
+                    text-align: center
+                div.col-6
+                    li.nav-item
+                        a
+                            font-size: 13px !important
+                div.col-3
+                    button.size
+                        width: 15px
+                        height: 15px
+                        border-radius: 5px
+    section#main
+        div.container
+            div.row
+                div.col-xl-6
+                    align-self: center
+                    h2
+                        color: $red
+                        font-size: 45px
+                    h1
+                        font-size: 99px
+                        font-weight: bolder
+                    p
+                        font-size: 20px
+                    a.btn
+                        border-radius: 5rem
+                        height: 55px
+                        width: 160px
+                        text-align: center
+                        color: white
+                        padding-top: 15px
+                div#bg-i
+                    background-image: url('../../public/images/slider-1.jpg')
+                    background-size: contain
+                    height: 715px
+    section#serv
+        div.container
+            div.row
+                div.bgimg1
+                    background-image: url('../../public/images/services/service-1.jpg')
+                div.bgimg2
+                    background-image: url('../../public/images/services/service-2.jpg')
+                div.bgimg3
+                    background-image: url('../../public/images/services/slider-3.jpg')
+                div.bgimg1,div.bgimg2,div.bgimg3
+                    height: 265px
+                    background-size: cover
+                    background-position: center
+                    font-size: 29px
+                    font-weight: 600
+                    text-align: center
+                    padding-top: 100px
+                    a
+                        color: white
+                div.title
+                    h4
+                        font-weight: bolder
+                div.img
+                    margin: 0 45px
+                    img
+                        width: 353px
+                        height: 278px
+                    div.fd
+                        flex-direction: row !important
+                    div.d-flex
+                        flex-direction: column
+                        text-align: center
+                        margin: 3rem 0
+                        a
+                            color: black
+                            text-decoration: none
+                            font-weight: bolder
+                        span
+                            font-weight: bolder
+                        span.sale
+                            font-size: 18px
+                            color: white
+                            padding-top: 11px
+                            width: 52px
+                            height: 48px
+                            background-color: $red
+                            border: solid 1px transparent
+                            border-radius: 100%
+                            margin-left: 60px
+                        span.gr
+                            text-decoration: line-through
+                        span.red
+                            color: $red
+                div.p1
+                    margin-left: 0
+                div.p3
+                    margin-right: 0
+    section#parallax
+        background-image: url('../../public/images/cta-bg.jpg')
+        height: 590px
+        background-attachment: fixed
+        background-repeat: no-repeat
+        background-size: cover
+        display: flex
+        flex-direction: column
+        justify-content: center
+        font-weight: bolder
+        h1
+            color: white
+            font-size: 40px
+            margin: 0 auto
+        button
+            width: 148px
+            height: 53px
+            border-radius: 25rem
+            margin: 0 auto
+    section#carou
+        h5
+            font-weight: bolder
+        div.d-flex
+            flex-direction: column
+            justify-content: center
+            padding: 5.5rem 30px
+            h5
+                margin: 3rem 0
+                font-weight: bolder
+            button
+                width: 148px
+                height: 52px
+                border-radius: 10px
+                font-weight: bolder
+                margin: 0 auto
+                font-size: 13px
+                margin-top: 15px
+    section#prefoot
+        padding: 4rem 0
+        font-size: 13px
+        margin-top: 3rem
+        background-color: rgb(38,38,38)
+        div.container
+            div.row
+                div.col-12
+                    h6
+                        font-weight: bolder
+                        color: white
+                    a
+                        text-decoration: none
+                    a:hover
+                        color: white !important
+                div.bo
+                    border-right: solid 0.1px grey
+                    border-left: solid 0.1px grey
+                    ul
+                        padding-right: 50px
+                        li
+                            list-style: mongolian
+                            border-bottom: solid grey 0.1px
+                            margin: 0.5rem 0
+                            padding: 0.5rem 0
+                div.abo
+                    a
+                        border: solid grey 0.1px
+                        padding: 0.5rem
+                        display: inline-flex
+                        width: max-content
+                        margin: 0.5rem
+                        font-size: 13px
+                        font-weight: bolder
+    footer
+        background-color: black
