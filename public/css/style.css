@@ -9670,6 +9670,7 @@ body .bgrey {
 }
 body header {
   margin-bottom: 3rem;
+  background-color: white;
 }
 body header div.container div.row div.col-12 {
   text-align: center;
@@ -9846,7 +9847,7 @@ body section#prefoot div.container div.row div.bo ul {
   padding-right: 50px;
 }
 body section#prefoot div.container div.row div.bo ul li {
-  list-style: mongolian;
+  list-style: none;
   border-bottom: solid grey 0.1px;
   margin: 0.5rem 0;
   padding: 0.5rem 0;
