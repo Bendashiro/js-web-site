@@ -1,10 +1,10 @@
 //Import
 export const changeTheme = () => {
-    var bttBlack = document.querySelectorAll('#form>button')[0];
-    var bttWhite = document.querySelectorAll('#form>button')[1];
-    var blackElt = document.querySelectorAll('.black');
-    var whiteElt = document.getElementsByClassName('white');
-    var greyElt = document.getElementsByClassName('grey');
+    let bttBlack = document.querySelectorAll('#form>button')[0];
+    let bttWhite = document.querySelectorAll('#form>button')[1];
+    let blackElt = document.querySelectorAll('.black');
+    let whiteElt = document.getElementsByClassName('white');
+    let greyElt = document.getElementsByClassName('grey');
     bttBlack.addEventListener('click',function() {
         document.body.style.transition = 'all 2s';
         document.body.style.backgroundColor = "black";

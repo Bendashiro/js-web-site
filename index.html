@@ -17,7 +17,7 @@
                     <img id="logo" src="./public/images/logo.png" class="my-5" alt="" height="32" width="165" title="logo">
                 </div>
                 <div id="vide" class="col-3"></div>
-                <div class="col-6 justify-content-center">
+                <div class="col-md-12 col-12 col-sm-12 col-lg-6 col-xl-6 justify-content-center">
                     <ul class="nav">
                         <li class="nav-item">
                             <a class="nav-link active text-uppercase text-secondary grey" data-style="color" href="#">home</a>
@@ -39,91 +39,98 @@
                         </li>
                     </ul>
                 </div>
-                <div id="form" class="col-3 d-flex justify-content-center">
+                <div id="form" class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 d-flex justify-content-center">
                     <button class="bg-dark black size my-2 mx-1"></button>
                     <button class="bg-white size my-2 mr-3"></button>
-                    <button type="submit">Connexion</button>
+                    <button id="co" data-style="backgroundColor" data-style="color" class="black white" type="submit">Connexion</button>
                 </div>
             </div>
         </div>
     </header>
-    <section id="logIn" data-style="backgroundColor" class="d-none">
+    <section id="logIn" data-style="backgroundColor" class="mx-auto black py-4">
+        <h5 class="white text-center" data-style="color">Log in</h5>
+        <button class="croix"><i class="fas fa-times"></i></button>
         <div class="container">
-            <h5>Sign in</h5>
             <form action="">
-                <h5 data-style="color">Sign in</h5>
                 <div class="form-group">
-                    <label data-style="color" for="logUsername">Username :
-                    </label>
+                    <label class="white" data-style="color" for="logUsername">Username :
+                    </label> <br>
                     <input type="text" id="logUsername" placeholder="Enter username">
                 </div>
                 <div class="form-group">
-                    <label data-style="color" for="logPassword">Password :
-                    </label>
+                    <label class="white" data-style="color" for="logPassword">Password :
+                    </label> <br>
                     <input type="text" id="logPassword" placeholder="Enter password">
                 </div>
+                <button class="log d-flex mx-auto" type="submit">Log in</button>
             </form>
+            <a id="create">Create a new account</a>
         </div>
     </section>
-    <section id="SignUp" class="d-none">
-        <div data-style="backgroundColor" class="container">
-            <h5 data-style="color">Sign up</h5>
-            <p data-style="color">Entrez vos coordonnées</p>
+    <section id="signUp" data-style="backgroundColor" class="text-center mx-auto py-4 black">
+        <h5 class="white pb-4" data-style="color">Complete the fields</h5>
+        <button class="croix"><i class="fas fa-times"></i></button>
+        <div class="container">
             <form action="">
                 <div class="form-row">
-                    <div class="form-col-6">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                         <div class="form-group">
-                            <label data-style="color" for="name">Name :
-                            </label>
+                            <label class="white" data-style="color" for="name">Name :
+                            </label> <br>
                             <input type="text" id="name" placeholder="Enter name">
                         </div>
                         <div class="form-group">
-                            <label data-style="color" for="email">Email :
-                            </label>
-                            <input type="email" id="email" placeholder="Enter@email">
+                            <label class="white" data-style="color" for="email">Email :
+                            </label> <br>
+                            <input class="white" data-style="color" type="email" id="email" placeholder="Enter@email">
                         </div>
                         <div class="form-group">
-                            <label data-style="color" for="userN">Username :
-                            </label>
+                            <label class="white" data-style="color" for="userN">Username :
+                            </label> <br>
                             <input type="text" id="userN" placeholder="Enter username">
                         </div>
                     </div>
-                    <div class="form-col-6">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                         <div class="form-group">
-                            <label data-style="color" for="firstN">First name :
-                            </label>
+                            <label class="white" data-style="color" for="firstN">First name :
+                            </label> <br>
                             <input type="text" id="firstN" placeholder="Enter first name">
                         </div>
                         <div class="form-group">
-                            <label data-style="color" for="num">Phone number :
-                            </label>
+                            <label class="white" data-style="color" for="num">Phone number :
+                            </label> <br>
                             <input type="number" id="num" placeholder="Enter ur phone number">
                         </div>
                         <div class="form-group">
-                            <label data-style="color" for="passW">Password
-                            </label>
+                            <label class="white" data-style="color" for="passW">Password
+                            </label> <br>
                             <input type="password" id="passW" placeholder="Enter password">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label data-style="color" for="adress">Adress :
-                        </label>
-                        <input type="text" id="adress" placeholder="Enter adress">
+                    <div class="col-12">
+                        <div class="form-group justify-content-center">
+                            <label class="white" data-style="color" for="adress">Adress :
+                            </label> <br>
+                            <input type="text" id="adress" placeholder="Enter adress">
+                        </div>
                     </div>
                 </div>
+                <button id="return" type="reset" data-style="color" class="bpos black"><i class="fas fa-undo-alt"></i></button>
+                <button class="sign" type="submit">Sign up</button>
             </form>
         </div>
     </section>
-    <section id="main" data-style="backgroundColor" class="bgrey grey">
+    <section id="main" data-style="backgroundColor" class="bgrey grey fadein">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                     <h2>Shop at</h2>
                     <h1 class="black" data-style="color">emporium.</h1>
-                    <p class="text-secondary grey" data-style="color">A wonderful serenity has taken possession of my entire
+                    <p class="text-secondary grey" data-style="color">A wonderful serenity has taken possession of my
+                        entire
                         soul, like these
                         sweet mornings of spring</p>
-                    <a type="button" class="btn text-uppercase bgred" data-style="color" href="">sale items</a>
+                    <a id="btnHover" type="button" class="btn text-uppercase bgred" data-style="color" href="">sale items</a>
                 </div>
                 <div id="bg-i" class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
                 </div>
@@ -151,70 +158,160 @@
                 <div class="col-12 py-5 title">
                     <h4 class="text-center black" data-style="color">Recent Products</h4>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 img p1">
-                    <img src="./public/images/products_mini/product-luxry-sofa.jpg" alt="">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 img p1">
+                    <div class="pos">
+                        <img src="./public/images/products_mini/product-luxry-sofa.jpg" alt="" class="img-fluid">
+                        <div class="abs row no-gutters">
+                            <div class="bgrey text-center col-6">
+                                <a href="#"><i class="fas fa-eye py-3"></i>View details</a>
+                            </div>
+                            <div class="bgred text-center col-6">
+                                <a href="#"><i class="fas fa-shopping-cart py-3"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="d-flex">
                         <a href="#" class="black" data-style="color">Luxary Sofa</a>
                         <span class="red">$600.00</span>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 img p2">
-                    <img src="./public/images/products_mini/product-gloves.jpg" alt="">
-                    <div class="d-flex fd">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 img p2">
+                    <div class="pos">
+                        <img class="img-fluid" src="./public/images/products_mini/product-gloves.jpg" alt="">
+                        <div class="abs row no-gutters">
+                            <div class="bgrey text-center col-6">
+                                <a href="#"><i class="fas fa-eye py-3"></i>View details</a>
+                            </div>
+                            <div class="bgred text-center col-6">
+                                <a href="#"><i class="fas fa-shopping-cart py-3"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex fd justify-content-center">
                         <span class="sale white" data-style="color">Sale!</span>
                         <div>
-                            <a href="#" class="black" data-style="color">Leather Gloves</a>
+                            <a href="#" class="black" data-style="color">Leather Gloves</a><br>
                             <span class="gr text-secondary grey mr-2" data-style="color">$34.00</span><span class="red">$27.00</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 img p3">
-                    <img src="./public/images/products_mini/product-cups.jpg" alt="">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 img p3">
+                    <div class="pos">
+                        <img class="img-fluid" src="./public/images/products_mini/product-cups.jpg" alt="">
+                        <div class="abs row no-gutters">
+                            <div class="bgrey text-center col-6">
+                                <a href="#"><i class="fas fa-eye py-3"></i>View details</a>
+                            </div>
+                            <div class="bgred text-center col-6">
+                                <a href="#"><i class="fas fa-shopping-cart py-3"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="d-flex">
                         <a href="#" class="black" data-style="color">Colorful Bowl</a>
                         <span class="red">$18.00</span>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 img p1">
-                    <img src="./public/images/products_mini/product-bag.jpg" alt="">
-                    <div class="d-flex fd">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 img p1">
+                    <div class="pos">
+                        <img class="img-fluid" src="./public/images/products_mini/product-bag.jpg" alt="">
+                        <div class="abs row no-gutters">
+                            <div class="bgrey text-center col-6">
+                                <a href="#"><i class="fas fa-eye py-3"></i>View details</a>
+                            </div>
+                            <div class="bgred text-center col-6">
+                                <a href="#"><i class="fas fa-shopping-cart py-3"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex fd justify-content-center">
                         <span class="sale white" data-style="color">Sale!</span>
                         <div>
-                            <a href="#" class="black" data-style="color">Women Bag</a>
+                            <a href="#" class="black" data-style="color">Women Bag</a><br>
                             <span data-style="color" class="gr text-secondary grey mr-2">$420.00</span><span class="red">$350.00</span>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 img p2">
-                    <img src="./public/images/products_mini/product-tshitr.jpg" alt="">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 img p2">
+                    <div class="pos">
+                        <img class="img-fluid" src="./public/images/products_mini/product-tshitr.jpg" alt="">
+                        <div class="abs row no-gutters">
+                            <div class="bgrey text-center col-6">
+                                <a href="#"><i class="fas fa-eye py-3"></i>View details</a>
+                            </div>
+                            <div class="bgred text-center col-6">
+                                <a href="#"><i class="fas fa-shopping-cart py-3"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="d-flex">
                         <a href="#" class="black" data-style="color">Minimal T-Shirt</a>
                         <span class="red">$15.00</span>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 img p3">
-                    <img src="./public/images/products_mini/product-plates.jpg" alt="">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 img p3">
+                    <div class="pos">
+                        <img class="img-fluid" src="./public/images/products_mini/product-plates.jpg" alt="">
+                        <div class="abs row no-gutters">
+                            <div class="bgrey text-center col-6">
+                                <a href="#"><i class="fas fa-eye py-3"></i>View details</a>
+                            </div>
+                            <div class="bgred text-center col-6">
+                                <a href="#"><i class="fas fa-shopping-cart py-3"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="d-flex">
                         <a href="#" class="black" data-style="color">Plates Set</a>
                         <span class="red">$30.00</span>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 img p1">
-                    <img src="./public/images/products_mini/product-modern-sofa.jpg" alt="">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 img p1">
+                    <div class="pos">
+                        <img class="img-fluid" src="./public/images/products_mini/product-modern-sofa.jpg" alt="">
+                        <div class="abs row no-gutters">
+                            <div class="bgrey text-center col-6">
+                                <a href="#"><i class="fas fa-eye py-3"></i>View details</a>
+                            </div>
+                            <div class="bgred text-center col-6">
+                                <a href="#"><i class="fas fa-shopping-cart py-3"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="d-flex">
                         <a href="#" class="black" data-style="color">Modern Sofa</a>
                         <span class="red">$900.00</span>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 img p2">
-                    <img src="./public/images/products_mini/product-bed.jpg" alt="">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 img p2">
+                    <div class="pos">
+                        <img class="img-fluid" src="./public/images/products_mini/product-bed.jpg" alt="">
+                        <div class="abs row no-gutters">
+                            <div class="bgrey text-center col-6">
+                                <a href="#"><i class="fas fa-eye py-3"></i>View details</a>
+                            </div>
+                            <div class="bgred text-center col-6">
+                                <a href="#"><i class="fas fa-shopping-cart py-3"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="d-flex">
                         <a href="#" class="black" data-style="color">Bed Linen</a>
                         <span class="red">$79.00</span>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 img p3">
-                    <img src="./public/images/products_mini/product-shoes.jpg" alt="">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 img p3">
+                    <div class="pos">
+                        <img class="img-fluid" src="./public/images/products_mini/product-shoes.jpg" alt="">
+                        <div class="abs row no-gutters">
+                            <div class="bgrey text-center col-6">
+                                <a href="#"><i class="fas fa-eye py-3"></i>View details</a>
+                            </div>
+                            <div class="bgred text-center col-6">
+                                <a href="#"><i class="fas fa-shopping-cart py-3"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
                     <div class="d-flex">
                         <a href="#" class="black" data-style="color">Minimal Shoes</a>
                         <span class="red">$60.00</span>
@@ -229,36 +326,160 @@
     </section>
     <section id="carou" data-style="backgroundColor" class="white">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h5 class="text-center my-5 black" data-style="color">Hot Fashion Products</h5>
+            <h5 class="text-center my-5 black" data-style="color">Hot Fashion Products</h5>
+            <div id="slide" class="row">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="pos">
+                        <img class="img-fluid" src="./public/images/products/product-tshitr-white-700x500.jpg" alt="">
+                        <div class="abs row no-gutters">
+                            <div class="bgrey text-center col-6">
+                                <a href="#"><i class="fas fa-eye py-3"></i>View details</a>
+                            </div>
+                            <div class="bgred text-center col-6">
+                                <a href="#"><i class="fas fa-shopping-cart py-3"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="black d-flex justify-content-center" data-style="color">White T-Shirt</a>
+                    <span class="d-flex justify-content-center red">$23.00</span>
                 </div>
-                <div class="col-12"></div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="pos">
+                        <img class="img-fluid" src="./public/images/products/product-bag-2-700x500.jpg" alt="">
+                        <div class="abs row no-gutters">
+                            <div class="bgrey text-center col-6">
+                                <a href="#"><i class="fas fa-eye py-3"></i>View details</a>
+                            </div>
+                            <div class="bgred text-center col-6">
+                                <a href="#"><i class="fas fa-shopping-cart py-3"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex fd">
+                        <span class="sale white" data-style="color">Sale!</span>
+                        <div>
+                            <a href="#" class="black" data-style="color">Women Bag</a>
+                            <span data-style="color" class="gr text-secondary grey mr-2">$600.00</span><span class="red">$450.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="pos">
+                        <img class="img-fluid" src="./public/images/products/product-jacket-700x500.jpg" alt="">
+                        <div class="abs row no-gutters">
+                            <div class="bgrey text-center col-6">
+                                <a href="#"><i class="fas fa-eye py-3"></i>View details</a>
+                            </div>
+                            <div class="bgred text-center col-6">
+                                <a href="#"><i class="fas fa-shopping-cart py-3"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="black d-flex justify-content-center" data-style="color">Sporty Jacket</a><br>
+                    <span class="red d-flex justify-content-center">$40.00</span>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="pos">
+                        <img class="img-fluid" src="./public/images/products/product-shoes-700x500.jpg" alt="">
+                        <div class="abs row no-gutters">
+                            <div class="bgrey text-center col-6">
+                                <a href="#"><i class="fas fa-eye py-3"></i>View details</a>
+                            </div>
+                            <div class="bgred text-center col-6">
+                                <a href="#"><i class="fas fa-shopping-cart py-3"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="black d-flex justify-content-center" data-style="color">Minimal Shoes</a><br>
+                    <span class="red d-flex justify-content-center">$60.00</span>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="pos">
+                        <img class="img-fluid" src="./public/images/products/product-tshitr-700x500.jpg" alt="">
+                        <div class="abs row no-gutters">
+                            <div class="bgrey text-center col-6">
+                                <a href="#"><i class="fas fa-eye py-3"></i>View details</a>
+                            </div>
+                            <div class="bgred text-center col-6">
+                                <a href="#"><i class="fas fa-shopping-cart py-3"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="black d-flex justify-content-center" data-style="color">Minimal T-Shirt</a><br>
+                    <span class="red d-flex justify-content-center">$15.00</span>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="pos">
+                        <img class="img-fluid" src="./public/images/products/product-bag-700x500.jpg" alt="">
+                        <div class="abs row no-gutters">
+                            <div class="bgrey text-center col-6">
+                                <a href="#"><i class="fas fa-eye py-3"></i>View details</a>
+                            </div>
+                            <div class="bgred text-center col-6">
+                                <a href="#"><i class="fas fa-shopping-cart py-3"></i>Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex fd">
+                        <span class="sale white" data-style="color">Sale!</span>
+                        <div>
+                            <a href="#" class="black" data-style="color">Women Bag</a>
+                            <span data-style="color" class="gr text-secondary grey mr-2">$420.00</span><span class="red">$350.00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3">
+                    <div class="pos">
+                        <img class="img-fluid" src="./public/images/products_mini/product-gloves.jpg" alt="">
+                    </div>
+                    <div class="d-flex fd">
+                        <span class="sale white" data-style="color">Sale!</span>
+                        <div>
+                            <a href="#" class="black" data-style="color">Women Bag</a>
+                            <span data-style="color" class="gr text-secondary grey mr-2">$420.00</span><span class="red">$350.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center m-3" id="icons">
+                <i class="fas fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <i class="far fa-circle"></i>
+                <!-- <i id="i1" class="far fa-circle d-none"></i>
+                <i id="i2" class="far fa-circle d-none"></i>
+                <i id="i3" class="far fa-circle d-none"></i> -->
+            </div>
+            <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center">
-                    <div class="bgrey grey d-flex" data-style="backgroundColor">
+                    <div class="bgrey grey d-flex pa" data-style="backgroundColor">
                         <i class="far fa-check-circle fa-3x black" data-style="color"></i>
                         <h5 class="text-uppercase black" data-style="color">trusted by 10,000+ <br>customers</h5>
-                            <p class="text-secondary grey" data-style="color">Far far away, behind the word mountains, far
-                                from the countries
-                                Vokalia and Consonantia, there live the blind texts.</p>
-                            <button class="bgred text-light text-uppercase white" data-style="color">learn more</button>
+                        <p class="text-secondary grey" data-style="color">Far far away, behind the word mountains,
+                            far
+                            from the countries
+                            Vokalia and Consonantia, there live the blind texts.</p>
+                        <button class="bgred text-light text-uppercase white" data-style="color">learn more</button>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center">
-                    <div class="bgred d-flex">
+                    <div class="bgred d-flex pa">
                         <i class="fab fa-telegram-plane fa-3x black" data-style="color"></i>
                         <h5 class="text-uppercase black" data-style="color">very fast <br>shipping</h5>
-                            <p class="text-secondary grey" data-style="color">Far far away, behind the word mountains, far
-                                from the countries
-                                Vokalia and Consonantia, there live the blind texts.</p>
-                            <button class="text-dark text-uppercase black" data-style="color">learn more</button>
+                        <p class="text-secondary grey" data-style="color">Far far away, behind the word mountains,
+                            far
+                            from the countries
+                            Vokalia and Consonantia, there live the blind texts.</p>
+                        <button class="text-dark text-uppercase black" data-style="color">learn more</button>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-center">
-                    <div class="bgrey grey d-flex" data-style="backgroundColor">
+                    <div class="bgrey grey d-flex pa" data-style="backgroundColor">
                         <i class="far fa-check-circle fa-3x black" data-style="color"></i>
                         <h5 class="text-uppercase black" data-style="color">trusted by 10,000+ <br>customers</h5>
-                        <p class="text-secondary grey" data-style="color">Far far away, behind the word mountains, far from
+                        <p class="text-secondary grey" data-style="color">Far far away, behind the word mountains,
+                            far
+                            from
                             the countries
                             Vokalia and Consonantia, there live the blind texts.</p>
                         <button class="bgred text-light text-uppercase white" data-style="color">learn more</button>
@@ -266,45 +487,47 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
     <section id="prefoot" class="grey" data-style="backgroundColor">
         <div class="container text-secondary grey">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <div class="px-5">
+                    <div class="">
                         <h6 class="text-uppercase white" data-style="color">about us</h6>
-                            <p class="grey" data-style="color">A wonderful serenity has taken possession of my entire soul, like
-                                these sweet mornings
-                                of spring which I enjoy with my whole heart. I am alone, and feel the charm of
-                                existence in this spot, which was created for the bliss of</p>
+                        <p class="text-secondary px-5" data-style="color">A wonderful serenity has taken possession of my
+                            entire soul, like
+                            these sweet mornings
+                            of spring which I enjoy with my whole heart. I am alone, and feel the charm of
+                            existence in this spot, which was created for the bliss of</p>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 bo">
                     <div class="">
                         <h6 class="text-uppercase white" data-style="color">recent posts</h6>
-                            <ul>
-                                <li>
-                                    <i class="fas fa-angle-right grey" data-style="color"></i><a href="" data-style="color"
-                                        class="text-secondary grey ml-3">Hello world!</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-angle-right grey" data-style="color"></i><a href="" data-style="color"
-                                        class="text-secondary grey ml-3">Wonderful serenity has taken</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-angle-right grey" data-style="color"></i><a href="" data-style="color"
-                                        class="text-secondary grey ml-3">In my soul and absorb its power</a>
-                                </li>
-                                <li>
-                                    <i class="fas fa-angle-right grey" data-style="color"></i><a href="" data-style="color"
-                                        class="text-secondary grey ml-3">I hear the buzz of the little</a>
-                                </li>
-                            </ul>
+                        <ul>
+                            <li>
+                                <i class="fas fa-angle-right grey" data-style="color"></i><a href="" data-style="color"
+                                    class="text-secondary grey ml-3">Hello world!</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right grey" data-style="color"></i><a href="" data-style="color"
+                                    class="text-secondary grey ml-3">Wonderful serenity has taken</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right grey" data-style="color"></i><a href="" data-style="color"
+                                    class="text-secondary grey ml-3">In my soul and absorb its power</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right grey" data-style="color"></i><a href="" data-style="color"
+                                    class="text-secondary grey ml-3">I hear the buzz of the little</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 abo">
-                    <div class="px-3">
-                        <h6 class="text-uppercase" data-style="color">tag cloud</h6>
+                    <div class="">
+                        <h6 class="text-uppercase black" data-style="color">tag cloud</h6>
                         <a class="text-uppercase text-secondary grey" data-style="color" href="">business</a>
                         <a class="text-uppercase text-secondary grey" data-style="color" href="">conference</a>
                         <a class="text-uppercase text-secondary grey" data-style="color" href="">gadget</a>
@@ -331,9 +554,7 @@
         </div>
     </footer>
 
-    <script src="./src/js/nav.js"></script>
     <script src="./src/js/index.js" type="module"></script>
-    <!-- <script src="./src/js/theme.js"></script> -->
 </body>
 
 </html>

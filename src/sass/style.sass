@@ -3,10 +3,67 @@
 @import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css'
 $red: rgb(202,84,78)
 $grey: rgb(243,243,243)
+@keyframes fadein
+    from
+        opacity: 0
+    to
+        opacity: 1
+.fadein
+    animation-name: fadein
+    animation-duration: 4s
+@media (max-width: 991.98px)
+    section#prefoot
+        .bo
+            border: none !important
+    section#carou
+        i#i1
+            display: inline !important
+@media (max-width: 767.98px)
+    section#carou
+        i#i2
+            display: inline !important
+@media (max-width: 575.98px)
+    section#carou
+        i#i3
+            display: inline !important
 body
     box-sizing: border-box
     font-family: 'Poppins'
     overflow-wrap: break-word
+    div.pos
+        position: relative
+        overflow: hidden
+        img
+            transition: all 1s
+        &:hover
+            .abs
+                bottom: 0
+            img
+                transform: scale(1.1)
+        .abs
+            align-content: center
+            width: 100%
+            position: absolute
+            bottom: -100px
+            transition: all 1s
+            a
+                color: black
+                text-decoration: none
+                font-weight: bolder
+    .sale
+        font-size: 18px
+        color: white
+        padding-top: 11px
+        width: 52px
+        height: 48px
+        background-color: $red
+        border: solid 1px transparent
+        border-radius: 100%
+        margin-left: 60px
+    .gr
+        text-decoration: line-through
+    .red
+        color: $red
     .bgred
         background-color: $red
     .bgrey
@@ -19,15 +76,49 @@ body
             div.row
                 div.col-12
                     text-align: center
-                div.col-6
+                div.col-xl-6
                     li.nav-item
                         a
                             font-size: 13px !important
-                div.col-3
+                div.col-xl-3
                     button.size
-                        width: 15px
-                        height: 15px
+                        width: 1rem
+                        height: 1rem
                         border-radius: 5px
+                    #co
+                        background-color: black
+                        color: white
+    section#logIn,section#signUp
+        display: none
+        background-color: black
+        color: white
+        width: fit-content
+        border-radius: 1rem
+        position: fixed
+        z-index: 1
+        input
+            width: min-content
+        .bpos
+            position: absolute
+            left: 10px
+        button
+            border-radius: 5rem
+        .croix
+            position: absolute
+            right: 10px
+            top: 20px
+        .return
+            display: flex
+            margin: 0 auto       
+    section#logIn
+        right: 50%
+        top: 100px
+        left: 50%
+    section#signUp
+        width: 60%
+        right: 50%
+        top: 100px
+        left: 25%
     section#main
         div.container
             div.row
@@ -43,8 +134,8 @@ body
                         font-size: 20px
                     a.btn
                         border-radius: 5rem
-                        height: 55px
-                        width: 160px
+                        height: 3.5rem
+                        width: 9rem
                         text-align: center
                         color: white
                         padding-top: 15px
@@ -75,10 +166,7 @@ body
                     h4
                         font-weight: bolder
                 div.img
-                    margin: 0 45px
-                    img
-                        width: 353px
-                        height: 278px
+                    // img
                     div.fd
                         flex-direction: row !important
                     div.d-flex
@@ -95,8 +183,8 @@ body
                             font-size: 18px
                             color: white
                             padding-top: 11px
-                            width: 52px
-                            height: 48px
+                            width: 3rem
+                            height: 3rem
                             background-color: $red
                             border: solid 1px transparent
                             border-radius: 100%
@@ -124,23 +212,41 @@ body
             font-size: 40px
             margin: 0 auto
         button
-            width: 148px
-            height: 53px
+            width: 9rem
+            height: 3rem
             border-radius: 25rem
             margin: 0 auto
     section#carou
+        .container
+            overflow: hidden
+        div#slide
+            display: flex
+            flex-wrap: nowrap
+            transition: all 1s ease
+            img
+                width: 100%
+                margin-right: 10px
+            div.fd
+                flex-direction: row
+            a
+                color: black
+                text-decoration: none
+                font-weight: bolder
+            span
+                font-weight: bolder
         h5
             font-weight: bolder
         div.d-flex
             flex-direction: column
             justify-content: center
+        div.pa
             padding: 5.5rem 30px
             h5
                 margin: 3rem 0
                 font-weight: bolder
             button
-                width: 148px
-                height: 52px
+                width: 7rem
+                height: 3rem
                 border-radius: 10px
                 font-weight: bolder
                 margin: 0 auto

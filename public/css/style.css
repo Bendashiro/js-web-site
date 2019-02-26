@@ -9657,10 +9657,84 @@ h3 {
     border-color: #dee2e6;
   }
 }
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fadein {
+  animation-name: fadein;
+  animation-duration: 4s;
+}
+
+@media (max-width: 991.98px) {
+  section#prefoot .bo {
+    border: none !important;
+  }
+
+  section#carou i#i1 {
+    display: inline !important;
+  }
+}
+@media (max-width: 767.98px) {
+  section#carou i#i2 {
+    display: inline !important;
+  }
+}
+@media (max-width: 575.98px) {
+  section#carou i#i3 {
+    display: inline !important;
+  }
+}
 body {
   box-sizing: border-box;
   font-family: "Poppins";
   overflow-wrap: break-word;
+}
+body div.pos {
+  position: relative;
+  overflow: hidden;
+}
+body div.pos img {
+  transition: all 1s;
+}
+body div.pos:hover .abs {
+  bottom: 0;
+}
+body div.pos:hover img {
+  transform: scale(1.1);
+}
+body div.pos .abs {
+  align-content: center;
+  width: 100%;
+  position: absolute;
+  bottom: -100px;
+  transition: all 1s;
+}
+body div.pos .abs a {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+body .sale {
+  font-size: 18px;
+  color: white;
+  padding-top: 11px;
+  width: 52px;
+  height: 48px;
+  background-color: #ca544e;
+  border: solid 1px transparent;
+  border-radius: 100%;
+  margin-left: 60px;
+}
+body .gr {
+  text-decoration: line-through;
+}
+body .red {
+  color: #ca544e;
 }
 body .bgred {
   background-color: #ca544e;
@@ -9675,13 +9749,56 @@ body header {
 body header div.container div.row div.col-12 {
   text-align: center;
 }
-body header div.container div.row div.col-6 li.nav-item a {
+body header div.container div.row div.col-xl-6 li.nav-item a {
   font-size: 13px !important;
 }
-body header div.container div.row div.col-3 button.size {
-  width: 15px;
-  height: 15px;
+body header div.container div.row div.col-xl-3 button.size {
+  width: 1rem;
+  height: 1rem;
   border-radius: 5px;
+}
+body header div.container div.row div.col-xl-3 #co {
+  background-color: black;
+  color: white;
+}
+body section#logIn, body section#signUp {
+  display: none;
+  background-color: black;
+  color: white;
+  width: fit-content;
+  border-radius: 1rem;
+  position: fixed;
+  z-index: 1;
+}
+body section#logIn input, body section#signUp input {
+  width: min-content;
+}
+body section#logIn .bpos, body section#signUp .bpos {
+  position: absolute;
+  left: 10px;
+}
+body section#logIn button, body section#signUp button {
+  border-radius: 5rem;
+}
+body section#logIn .croix, body section#signUp .croix {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+body section#logIn .return, body section#signUp .return {
+  display: flex;
+  margin: 0 auto;
+}
+body section#logIn {
+  right: 50%;
+  top: 100px;
+  left: 50%;
+}
+body section#signUp {
+  width: 60%;
+  right: 50%;
+  top: 100px;
+  left: 25%;
 }
 body section#main div.container div.row div.col-xl-6 {
   align-self: center;
@@ -9699,8 +9816,8 @@ body section#main div.container div.row div.col-xl-6 p {
 }
 body section#main div.container div.row div.col-xl-6 a.btn {
   border-radius: 5rem;
-  height: 55px;
-  width: 160px;
+  height: 3.5rem;
+  width: 9rem;
   text-align: center;
   color: white;
   padding-top: 15px;
@@ -9734,13 +9851,6 @@ body section#serv div.container div.row div.bgimg1 a, body section#serv div.cont
 body section#serv div.container div.row div.title h4 {
   font-weight: bolder;
 }
-body section#serv div.container div.row div.img {
-  margin: 0 45px;
-}
-body section#serv div.container div.row div.img img {
-  width: 353px;
-  height: 278px;
-}
 body section#serv div.container div.row div.img div.fd {
   flex-direction: row !important;
 }
@@ -9761,8 +9871,8 @@ body section#serv div.container div.row div.img div.d-flex span.sale {
   font-size: 18px;
   color: white;
   padding-top: 11px;
-  width: 52px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   background-color: #ca544e;
   border: solid 1px transparent;
   border-radius: 100%;
@@ -9797,10 +9907,33 @@ body section#parallax h1 {
   margin: 0 auto;
 }
 body section#parallax button {
-  width: 148px;
-  height: 53px;
+  width: 9rem;
+  height: 3rem;
   border-radius: 25rem;
   margin: 0 auto;
+}
+body section#carou .container {
+  overflow: hidden;
+}
+body section#carou div#slide {
+  display: flex;
+  flex-wrap: nowrap;
+  transition: all 1s ease;
+}
+body section#carou div#slide img {
+  width: 100%;
+  margin-right: 10px;
+}
+body section#carou div#slide div.fd {
+  flex-direction: row;
+}
+body section#carou div#slide a {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+body section#carou div#slide span {
+  font-weight: bolder;
 }
 body section#carou h5 {
   font-weight: bolder;
@@ -9808,15 +9941,17 @@ body section#carou h5 {
 body section#carou div.d-flex {
   flex-direction: column;
   justify-content: center;
+}
+body section#carou div.pa {
   padding: 5.5rem 30px;
 }
-body section#carou div.d-flex h5 {
+body section#carou div.pa h5 {
   margin: 3rem 0;
   font-weight: bolder;
 }
-body section#carou div.d-flex button {
-  width: 148px;
-  height: 52px;
+body section#carou div.pa button {
+  width: 7rem;
+  height: 3rem;
   border-radius: 10px;
   font-weight: bolder;
   margin: 0 auto;
